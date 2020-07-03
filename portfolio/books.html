@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- Required meta tags -->
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+<!-- Bootstrap CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+
+<!--fontawesome-->
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+<!--This is used for search icon. Instead putting icon manually it is loaded from fontawesome-->
+
+
+<style>
+    .navbar-custom { 
+                background-color: #3b3d3d; 
+            } 
+    .navbar-custom .navbar-brand, 
+        .navbar-custom .navbar-text { 
+            color: #ffffff; 
+        } </style>
+    
+
+<title>MY PORTFOLIO</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+    
+<header>
+
+<!-- navbar -->
+
+<nav class="navbar navbar-custom navbar-expand-md fixed-top">
+
+
+<button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse justify-content-between" id="nav">
+
+<ul class="navbar-nav">
+
+<li class="nav-item" >
+
+<a class="nav-link text-light font-weight-bold px-3" href="index.html">HOME</a>
+
+</li>
+
+<li class="active">
+    <div class="dropdown">
+      <a class="dropdown-toggle nav-link text-light font-weight-bold px-3" data-toggle="dropdown" href="#">MY FAVOURITES</a>
+      <ul class="dropdown-menu" role="menu">            
+        <li><a class="text-primary font-weight-bold px-3" href="#">BOOKS</a></li>
+        <li class="divider"></li>
+        <li><a class="text-primary font-weight-bold px-3" href="food.html">FOOD</a></li>
+      </ul>
+    </div>   
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-light font-weight-bold px-3" href="about_me.html">ABOUT ME</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-light font-weight-bold px-3" href="contact.html">CONTACT</a>
+
+</li>
+
+</ul>
+
+
+<!-- Search bar -->
+
+<form class="form-inline ml-3">
+
+<div class="input-group">
+
+<input type="text" class="form-control " placeholder="Search" >
+
+<button type="submit"><i class="fa fa-search"></i></button>
+
+</div>
+
+</form>
+
+</div>
+
+</nav>
+</header>
+<br><br><br>
+<h1 id="book">My Favourite Books</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">The Alchemist</h5><br>
+                  <div class="book">
+                    <img class="card-img-top" src="img/book/the_Alchemist.jpg"  alt="the alchemist">
+                  </div>
+                  <br><br>
+                  <a href="#" id="alchemist_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Rich Dad, Poor Dad</h5><br>
+                  <div class="book">
+                    <img class="card-img-top" src="img/book/rich-dad-poor-dad.png"  alt="Rich Dad, Poor Dad">
+                  </div>
+                  <br><br>
+                  <a href="#" id="dad_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">The Power Of Subconscious Mind</h5>
+                  <div class="book">
+                    <img class="card-img-top" src="img/book/the_power_of_subconscious_mind.jpg"  alt="The Power Of Subconscious Mind">
+                  </div>
+                  <br><br>
+                  <a href="#" id="mind_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+        
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">The Monk Who Sold His Ferrari</h5>
+                  <div class="book">
+                    <img class="card-img-top" src="img/book/themonkwhosoldhisferrari.jpg"  alt="The Monk Who Sold His Ferrari">
+                  </div>
+                  <br><br>
+                  <a href="#" id="monk_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Think and Grow Rich</h5><br>
+                  <div class="book">
+                    <img class="card-img-top" src="img/book/think_and_grow_rich.jpg"  alt="Think and Grow Rich">
+                  </div>
+                  <br><br>
+                  <a href="#" id="rich_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">To Kill a Mockingbird</h5><br>
+                  <div class="book">
+                    <img class="card-img-top" src="img/book/to_kill_a_mockingbird.jpg"  alt="To Kill a Mockingbird">
+                  </div>
+                  <br><br>
+                  <a href="#" id="mockingbird_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div id="alchemist" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg" >
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">The Alchemist</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                          &times;
+                      </button>
+                  </div>
+  
+                  <div class="modal-body">
+                      <p>
+                        The Alchemist (Portuguese: O Alquimista) is a novel by Brazilian author Paulo Coelho that was first 
+                        published in 1988. Originally written in Portuguese, it became a widely translated international bestseller.
+                        An allegorical novel, The Alchemist follows a young Andalusian shepherd in his journey to the pyramids of Egypt,
+                        after having a recurring dream of finding a treasure there.<br>
+                        The book's main theme is about finding one's destiny, although according to The New York Times, The Alchemist is
+                        "more self-help than literature". The advice given Santiago that "when you really want something to happen,
+                        the whole universe will conspire so that your wish comes true" is the core of the novel's philosophy and a motif that plays throughout it.
+                      </p>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <div id="dad" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Rich Dad, Poor Dad</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                      Rich Dad Poor Dad is a 1997 book written by Robert Kiyosaki and Sharon Lechter. It advocates the importance of financial 
+                      literacy (financial education), financial independence and building wealth through investing in assets, real estate investing,
+                      starting and owning businesses, as well as increasing one's financial intelligence (financial IQ) to improve one's business
+                      and financial aptitude. Robert Kiyosaki followed the book with Rich Dad's Cashflow Quadrant and Rich Dad's Guide to Investing.
+                      He has at least a dozen books published.  
+                      <br>
+                      Rich Dad Poor Dad is written in the style of a set of parables, ostensibly based on Kiyosaki's life.
+                      The titular "rich dad" is his friend's father who accumulated wealth due to entrepreneurship and savvy investing, 
+                      while the "poor dad" is claimed to be Kiyosaki's own father who he says worked hard all his life but never obtained 
+                      financial security. No one has ever proven that Rich Dad, the man who supposedly gave Kiyosaki all his advice for 
+                      wealthy living, ever existed. Nor has anyone ever documented any vast reserves of wealth earned by Kiyosaki prior to
+                      the publication of Rich Dad, Poor Dad in 1997.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="mind" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">The Power Of Your Subconscious Mind</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+
+              <div class="modal-body">
+                  <p>
+                    The Power of Your Subconscious Mind is simply written and tries to be free of culture or religion. It is slightly
+                    repetitive, but this in itself mirrors the book's idea of subconscious programming. (For full effect, the author's 
+                    advice that it be read at least twice should be taken.) It is also sometimes a bit whimsical and illogical - a bit 
+                    like the subconscious itself, but Murphy's whole point, in fact, is that if you refuse to try to understand the 
+                    non-rational mind, your rational desires and plans will be forever sabotaged.
+                    <br>
+                    The first half of the book is the best, as it explains how the subconscious works. The second half deals with its 
+                    role and power to transform in areas like marriage, human relations, scientific discovery, sleep, fear, forgiveness 
+                    and 'eternal youth'.
+                  </p>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+    <div id="monk" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">The Monk Who Sold His Ferrari</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+
+              <div class="modal-body">
+                  <p>
+                    The Monk Who Sold His Ferrari is a self-help book by Robin Sharma, a writer and motivational speaker. 
+                    The book is a business fable 
+                    derived from Sharma's personal experiences after leaving his career as a litigation lawyer at the age of 25.
+                    <br>
+                    It is A Fable About Fulfilling Your Dreams and Reaching Your Destiny by motivational 
+                    speaker and author Robin Sharma is an inspiring tale that provides a step-by-step approach to living with greater 
+                    courage, balance, abundance and joy. The Monk Who Sold His Ferrari tells the extraordinary story of Julian Mantle, 
+                    a lawyer forced to confront the spiritual crisis of his out-of-balance life, and the subsequent wisdom that he gains 
+                    on a life-changing odyssey that enables him to create a life of passion, purpose and peace.
+                  </p>
+              </div>
+
+          </div>
+      </div>
+    </div>
+
+    <div id="rich" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Think and Grow Rich</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+
+              <div class="modal-body">
+                  <p>
+                    Think and Grow Rich was written by Napoleon Hill in 1937 and promoted as a personal development and self-improvement book. 
+                    He claimed to be inspired by a suggestion from business magnate and later-philanthropist Andrew Carnegie.
+                    <br>
+                    First published during the Great Depression, the book has sold more than 15 million copies.
+                    <br>
+                    It remains the biggest seller of Napoleon Hill's books. BusinessWeek magazine's Best-Seller List ranked it the sixth 
+                    best-selling paperback business book 70 years after it was published.Think and Grow Rich is listed in John C. 
+                    Maxwell's A Lifetime "Must Read" Books List.
+                    <br>
+                    While the book's title and much of the writing concerns increasing income, the author insists that his philosophy 
+                    can help people succeed in any line of work, to do and be anything they can imagine.
+                    </p>
+              </div>
+
+          </div>
+      </div>
+    </div>
+
+    <div id="mockingbird" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">To Kill A Mockingbird</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+
+              <div class="modal-body">
+                  <p>
+                    To Kill a Mockingbird is a novel by Harper Lee published in 1960. Instantly successful, widely read in high schools 
+                    and middle schools in the United States, it has become a classic of modern American literature, winning the Pulitzer 
+                    Prize. The plot and characters are loosely based on Lee's observations of her family, her neighbors and an event that 
+                    occurred near her hometown of Monroeville, Alabama, in 1936, when she was ten.
+                    <br>
+                    Despite dealing with the serious issues of rape and racial inequality, the novel is renowned for its warmth and humor. 
+                    Atticus Finch, the narrator's father, has served as a moral hero for many readers and as a model of integrity for lawyers. 
+                    The historian Joseph Crespino explains, "In the twentieth century, To Kill a Mockingbird is probably the most widely read 
+                    book dealing with race in America, and its main character, Atticus Finch, the most enduring fictional image of racial 
+                    heroism."
+                    <br>
+                    As a Southern Gothic and Bildungsroman novel, the primary themes of To Kill a Mockingbird involve racial injustice and the 
+                    destruction of innocence. Scholars have noted that Lee also addresses issues of class, courage, compassion, and gender roles 
+                    in the Deep South. The book is widely taught in schools in the United States with lessons that emphasize tolerance and decry 
+                    prejudice. Despite its themes, To Kill a Mockingbird has been subject to campaigns for removal from public classrooms, often 
+                    challenged for its use of racial epithets.
+                  </p>
+              </div>
+
+          </div>
+      </div>
+    </div>
+
+    </div>
+</div>
+</body>
+
+</html>

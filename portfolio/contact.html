@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- Required meta tags -->
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+<!-- Bootstrap CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+
+<!--fontawesome-->
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+<!--This is used for search icon. Instead putting icon manually it is loaded from fontawesome-->
+
+
+<style>
+    .navbar-custom { 
+                background-color: #3b3d3d; 
+            } 
+    .navbar-custom .navbar-brand, 
+        .navbar-custom .navbar-text { 
+            color: #ffffff; 
+        } </style>
+    
+
+<title>MY PORTFOLIO</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+
+        <!-- navbar -->
+        
+        <nav class="navbar navbar-custom navbar-expand-md fixed-top">
+        
+        
+        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+        
+        <span class="navbar-toggler-icon"></span>
+        
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-between" id="nav">
+        
+        <ul class="navbar-nav">
+        
+        <li class="nav-item" >
+        
+        <a class="nav-link text-light font-weight-bold px-3" href="index.html">HOME</a>
+        
+        </li>
+        
+        <li>
+            <div class="dropdown">
+              <a class="dropdown-toggle nav-link text-light font-weight-bold px-3" data-toggle="dropdown" href="#">MY FAVOURITES</a>
+              <ul class="dropdown-menu" role="menu">            
+                <li><a class="text-primary font-weight-bold px-3" href="books.html">BOOKS</a></li>
+                <li class="divider"></li>
+                <li><a class="text-primary font-weight-bold px-3" href="food.html">FOOD</a></li>
+              </ul>
+            </div>   
+        </li>
+        
+        <li class="nav-item">
+        
+        <a class="nav-link text-light font-weight-bold px-3" href="about_me.html">ABOUT ME</a>
+        
+        </li>
+        
+        <li class="nav-item active">
+        
+        <a class="nav-link text-light font-weight-bold px-3" href="#">CONTACT</a>
+        
+        </li>
+        
+        </ul>
+        
+        
+        <!-- Search bar -->
+        
+        <form class="form-inline ml-3">
+        
+        <div class="input-group">
+        
+        <input type="text" class="form-control " placeholder="Search" >
+        
+        <button type="submit"><i class="fa fa-search"></i></button>
+        
+        </div>
+        
+        </form>
+        
+        </div>
+        
+        </nav>
+        </header>
+
+<div id="contact-head" class="container">
+    <div class="row row-header">
+        <div class="col-12 col-sm-10 text-center">
+            <br><br><br><h1>CONTACT ME</h1>
+            <h2>Feel free to say hello!</h2>
+        </div>
+        
+    </div>
+    <div class="row row-content">
+        
+         <div class="col-12 col-md-10">
+             <form>
+                 <div class="form-group row">
+                     <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                     <div class="col-5 col-md-3">
+                         <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                     </div>
+                     <div class="col-7 col-md-7">
+                         <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                     <div class="col-md-10">
+                         <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                     </div>
+                 </div>
+                 
+                 <div class="form-group row">
+                     <label for="feedback" class="col-md-2 col-form-label">Your Message</label>
+                     <div class="col-md-10">
+                         <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <div class="offset-md-2 col-md-10">
+                         <button type="submit" class="btn btn-primary">Send</button>
+                     </div>
+                 </div>
+             </form>
+         </div>
+          <div class="col-12 col-md">
+         </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">             
+            <div class="col-7 col-sm-5">
+                <h5>Our Address</h5>
+                <address>
+                  29, Pink City<br>
+                  Jaipur, Rajasthan<br>
+                  INDIA<br>
+                  <i class="fa fa-phone fa-lg"></i>: +91 87xxx-xxx88<br>
+                  <i class="fa fa-fax fa-lg"></i>: +91 87xxx-xxx8<br>
+                  <i class="fa fa-envelope fa-lg"></i>: 
+                  <a id="emailid1" href="mailto:confusion@food.net">kanupriya@example.com</a>
+               </address>
+            </div>
+            <div class="col-12 col-sm-7 align-self-center">
+                <div class="text-center">
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook fa-3x"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter fa-3x"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-youtube fa-3x"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-3x"></i></a>
+                </div>
+            </div>
+       </div>
+       
+    </div>
+</footer>
+</body>
+
+</html>

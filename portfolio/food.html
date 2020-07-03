@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- Required meta tags -->
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+<!-- Bootstrap CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+
+<!--fontawesome-->
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+<!--This is used for search icon. Instead putting icon manually it is loaded from fontawesome-->
+
+
+<style>
+    .navbar-custom { 
+                background-color: #3b3d3d; 
+            } 
+    .navbar-custom .navbar-brand, 
+        .navbar-custom .navbar-text { 
+            color: #ffffff; 
+        } </style>
+    
+
+<title>MY PORTFOLIO</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+  <script src="script.js"></script>
+<header>
+
+<!-- navbar -->
+
+<nav class="navbar navbar-custom navbar-expand-md fixed-top">
+
+
+<button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse justify-content-between" id="nav">
+
+<ul class="navbar-nav">
+
+<li class="nav-item" >
+
+<a class="nav-link text-light font-weight-bold px-3" href="index.html">HOME</a>
+
+</li>
+
+<li class="active">
+  <div class="dropdown">
+    <a class="dropdown-toggle nav-link text-light font-weight-bold px-3" data-toggle="dropdown" href="#">MY FAVOURITES</a>
+    <ul class="dropdown-menu" role="menu">            
+      <li><a class="text-primary font-weight-bold px-3" href="books.html">BOOKS</a></li>
+      <li class="divider"></li>
+      <li><a class="text-primary font-weight-bold px-3" href="#">FOOD</a></li>
+    </ul>
+  </div>   
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-light font-weight-bold px-3" href="about_me.html">ABOUT ME</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-light font-weight-bold px-3" href="contact.html">CONTACT</a>
+
+</li>
+
+</ul>
+
+
+<!-- Search bar -->
+
+<form class="form-inline ml-3">
+
+<div class="input-group">
+
+<input type="text" class="form-control " placeholder="Search" >
+
+<button type="submit"><i class="fa fa-search"></i></button>
+
+</div>
+
+</form>
+
+</div>
+
+</nav>
+</header>
+<br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Paneer Tikka Masala</h5>
+                  <img class="card-img-top" src="img/food/paneer_tikka_masala.jpg" alt="paneer tikka masala">
+                  <br><br>
+                  <a href="#" id="paneer_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Chhole Bhature</h5>
+                  <img class="card-img-top" src="img/food/chholebhature.jpg" alt="chhole bhature">
+                  <br><br>
+                  <a href="#" id="chhole_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Masala Dosa</h5>
+                  <img class="card-img-top" src="img/food/masala-dosa.png" alt="masala dosa">
+                  <br><br>
+                  <a href="#" id="dosa_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+        
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Chicken Biryani</h5>
+                  <img class="card-img-top" src="img/food/chicken_biryani.jpg" alt="chicken biryani">
+                  <br><br>
+                  <a href="#" id="biryani_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Schezwan Noodles</h5>
+                  <img class="card-img-top" src="img/food/schezwan-noodles.jpg" alt="schezwan noodles">
+                  <br><br>
+                  <a href="#" id="noodles_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-sm-2 col-md-4">
+            <div class="card align-items-center" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Pizza</h5>
+                  <img class="card-img-top" src="img/food/pizza.jpg" alt="pizza">
+                  <br><br>
+                  <a href="#" id="pizza_btn" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+        </div>
+
+        <div id="paneer" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg" >
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Paneer Tikka Masala</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                          &times;
+                      </button>
+                  </div>
+  
+                  <div class="modal-body">
+                      <p>
+                        Paneer tikka masala is an Indian dish of marinated paneer cheese served in a spiced gravy. 
+                        It is a vegetarian alternative to chicken tikka masala,
+                      </p>
+                      <h6>Recipe</h6>
+                      
+                        <ol>
+                          <li>Firstly, in a large kadai heat 2 tsp butter and saute 1 bay leaf.</li>
+                          <li>Now add 1 onion, 1 tsp ginger garlic paste and saute until it turns golden brown.</li>
+                          <li>Further, add spice powder and ½ tsp salt.</li>
+                          <li>Saute on low flame until it turns aromatic.</li>
+                          <li>Now add 1 cup tomato puree and ½ cup cashew paste and continue to saute.</li>
+                          <li>Add in the leftover marinated mixture and mix well.</li>
+                          <li>Further, add 1 cup water and mix well adjusting consistency as required.</li>
+                          <li>Now add in prepared paneer tikka and mix well.</li>
+                          <li>Cover and simmer for 10 minutes or until the flavours are absorbed.</li>
+                          <li>Add in 2 tbsp coriander and 1 tsp kasuri methi.</li>
+                          <li>Finally, enjoy paneer tikka masala recipe with tandoori roti.</li>
+                        </ol>
+                      
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <div id="chhole" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Chhole Bhature</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                  <p>Chole bhature is a food dish originating from northern India. Known as "Halwa Puri" in Pakistan, 
+                    it is a combination of chana masala and bhatura/Puri, a fried bread made from maida.</p>
+                  <h6>Recipe</h6>
+                  Prepare chole:
+                    <ol>
+                    <li>In a pan add oil, bay leaf, cinnamon, cumin seeds, cloves, whole pepper corns, green and black cardamom. </li>
+                    <li>After it gets brown add chopped onions and saute it. Now add chopped ginger and garlic. </li>
+                    <li>Followed by turmeric, chili powder, coriander powder, cumin powder, asafoetida and salt, fry the ingredients together well. </li>
+                    <li>For de glazing the pan add a little water. </li>
+                    <li>Now add the chole (soaked overnight and pressure cooked) to the masala. </li>
+                    <li>After stirring well add tomatoes, little sugar and salt to the chole. </li>
+                    <li>Now add ajwain, chopped green chilies and water for the base. </li>
+                    <li>To get the color in the chole, add a tea bag to the masala. </li>
+                    <li>Simmer the chole gently for an hour and cover it. </li>
+                    <li>Add lime juice and a dollop of butter to it. </li>
+                    <li>Garnish the chole with coriander and butter and serve them hot with bhaturas. </li>
+                    </ol>
+                    Prepare the bhaturas:
+                    <ol>
+                    <li>Knead the whole wheat flour, maida and salt together with adequate amount of water. </li>
+                    <li>Sprinkle the yeast on top. Leave it for 2-3 hours for the yeast to work. </li>
+                    <li>Divide it into equal portions. Roll out in an oval or round shape. </li>
+                    <li>Deep fry till golden brown, like a puri.</li>
+                    <li>Serve. </li>
+                    </ol>
+                  
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="dosa" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Masala Dosa</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+
+              <div class="modal-body">
+                  <p>
+                    Masala dosa or masale dose or masaldosa is a variation of the popular South Indian food dosa, which has its origins 
+                    in Tuluva Mangalorean cuisine of Karnataka. It is made from rice, lentils, potato, methi, and curry leaves, and served 
+                    with chutneys and sambar.
+                  </p>
+                  <h6>Recipe</h6>
+                  
+                    Dosa shell:
+                    <ol>
+                    <li> Separately soak rice and urad dal at least 6 hour or overnight in water. </li>
+                    <li> Grind to paste. </li>
+                    <li> Mix together, add salt with water to make batter. </li>
+                    <li> Leave in room temperature overnight. </li>
+                    <li> Mix onion and chilies to the thin batter. </li>
+                    <li> Heat pan or griddle with little ghee or oil. </li>
+                    <li>Spread the mix on pan in circular motion to make thin Dosa. </li>
+                    <li> Cook on both the sides, if desired. </li>
+                    </ol>
+                    Masala Filling (Spicy Filling):
+                    <ol>
+                    <li> Heat oil. Add mustard seed, peas, onions and spice. </li>
+                    <li> Fry for about 5 minutes on medium heat or/until onions are turned into golden brown</li>
+                    <li> Add potatoes and mix and cook some more. </li>
+                    <li> Add filling inside dosa shell and roll. Serve hot with chutney. </li>
+                    </ol> 
+
+                  
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+    <div id="biryani" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Chicken Biryani</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+
+              <div class="modal-body">
+                  <p>
+                    Chicken Biryani is a delicious savory rice dish that is loaded with spicy marinated chicken, caramelized onions, and flavorful saffron rice. 
+                  </p>
+                  <h6>Recipe</h6>
+                  
+                    <ol>
+                      <li>Heat the oil over medium-high heat in a large nonstick skillet or frying pan. Once the oil is shimmering, add the chicken pieces and let them cook, undisturbed, for 3-5 minutes until golden brown. </li>
+                      <li>Turn the chicken pieces and add the onion, jalapeno, ginger, salt, garam masala, cumin, turmeric, and salt. Saute for 3 minutes, or until the onions have softened. </li>
+                      <li>Add the garlic, tomatoes, and raisins to the pan. Stir well, then add the rice and broth. Allow the liquid to come to a boil, then cover the pan and turn the heat down to medium-low. Let the rice steam for 15 minutes. Turn off the heat and fluff the rice with a fork. Re-cover the pan, and allow the rice to continue to steam for another 10 minutes. </li>
+                      <li>Garnish with cilantro leaves and almond slices. Serve the Biryani straight out of the pan, accompanied by lime wedges for squeezing. </li>
+                      </ol>
+                      
+                  
+              </div>
+
+          </div>
+      </div>
+    </div>
+
+    <div id="noodles" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Schezwan Noodles</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+
+              <div class="modal-body">
+                  <p>
+                    Schezwan noodles recipe with step by step photos – Spicy and tasty stir fried vegetable noodles with schezwan sauce. 
+                  </p>
+                  <h3>Recipe</h3>
+                  
+                    <ol>
+                      <li> firstly, in a large kadai heat 2 tbsp olive oil and saute 3 clove garlic and 2 tbsp spring onion. </li>
+                      <li>also, saute ½ onion on high flame. </li>
+                      <li>further add ½ carrot, 4 tbsp cabbage, 4 beans and ½ capsicum. </li>
+                      <li> stir fry on high flame without overcooking vegetables. </li>
+                      <li>now add 2 tbsp schezwan sauce and ½ tsp salt. you can also use homemade schezwan sauce or schezwan chutney. </li>
+                      <li>stir fry for a minute making sure sauce is well combined. </li>
+                      <li>furthermore, add in cooked noodles and stir fry on high flame. </li>
+                      <li>mix until the sauce is well combined. </li>
+                      <li>finally, add spring onions and enjoy schezwan noodles. </li>
+                      </ol>
+                  
+              </div>
+
+          </div>
+      </div>
+    </div>
+
+    <div id="pizza" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Pizza</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+
+              <div class="modal-body">
+                <p>
+                  Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough 
+                  topped with tomatoes, cheese, and often various other ingredients which is then baked at a high temperature, traditionally 
+                  in a wood-fired oven.
+                </p>
+                <h3>Recipe</h3>
+               
+                  <ol>
+                    <li>In large bowl, mix flour, salt, sugar an yeast. </li>
+                    <li>Mix water and oil; add to flour mixture. </li>
+                    <li>Turn onto floured surface; knead for 2 minutes. </li>
+                    <li>Place in a greased bowl; turning to grease top. </li>
+                    <li>Cover and let rise for 20 minutes. </li>
+                    <li>Punch down; place on 12in, greased pizza pan. </li>
+                    <li>Pat into a circle. </li>
+                    <li>Topping: Mix first 5 ingredients and spread over crust. </li>
+                    <li>Put a few pepperoni slices on top of sauce. </li>
+                    <li>Sprinkle with 1/2 the mozzeralla; 1/2 the monterey jack, and 1/2 the parmesan. </li>
+                    <li>Put the rest of the pepperoni on. </li>
+                    <li>Repeat the cheese layer. </li>
+                    <li>Bake at 400* for 20 minutes or until light brown. </li>
+                  </ol>  
+              </div>
+
+          </div>
+      </div>
+    </div>
+
+
+    </div>
+</div>
+
+</body>
+
+</html>
