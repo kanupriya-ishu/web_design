@@ -1,0 +1,34 @@
+body{
+    background-color: #F7EDE2;
+    margin: 1%;
+    padding: 1%;
+}
+
+header {
+    background: #C0C0C0; 
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    padding: 1%;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    background-color: rgba(218,234,213,0.60);
+    color: #000000; 
+    display: inline-block;
+    padding: 10px;
+    margin: 1%; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+nav h1{
+    text-align: center;
+}
+
+.active {
+    background: #FFFFFF;
+}
