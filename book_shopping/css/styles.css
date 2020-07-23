@@ -108,6 +108,30 @@ a.active,a:hover{
   animation-duration: 2.5s;
 }
 
+footer{
+  background-color: #14213d;
+  color: #f2f2f2;
+}
+
+.contact{
+  text-align: center;
+  padding-top: 2%;
+}
+
+.contact1{
+  display: inline-block;
+  width: 20%;
+}
+
+.contact1 i{
+  padding-right: 3%;
+}
+
+.contact1 a{
+  text-decoration: underline;
+  color: #f2f2f2;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
