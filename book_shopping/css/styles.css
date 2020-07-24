@@ -187,4 +187,29 @@ footer{
   }
 
   .text {font-size: 11px}
+
+  footer{
+    background-color: #14213d;
+    color: #f2f2f2;
+  }
+  
+  .contact{
+    text-align: center;
+    padding-top: 2%;
+  }
+  
+  .contact1{
+    display: inline-block;
+    width: 80%;
+    padding-top: 2%;
+  }
+  
+  .contact1 i{
+    padding-right: 3%;
+  }
+  
+  .contact1 a{
+    text-decoration: underline;
+    color: #f2f2f2;
+  }
 }
