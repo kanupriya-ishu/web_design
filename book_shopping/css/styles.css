@@ -154,6 +154,9 @@ footer{
   .text {font-size: 21px}
 }
 @media (max-width: 858px){
+  .navbar{
+    z-index: 2;
+  }
   .checkbtn{
     display: block;
     margin-right: 40px;
